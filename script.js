@@ -25,9 +25,9 @@ document.querySelector(".check").addEventListener("click", function () {
 
       if (highScore < score) {
         highScore = score;
+        document.querySelector(".highscore").textContent = highScore;
       }
 
-      document.querySelector(".highscore").textContent = score;
       document.querySelector(".check").disabled = true;
       document.querySelector(".check").style.backgroundColor = "#ccc";
     } else {
